@@ -1,0 +1,39 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Iae parça"
+  - text: "fala"
+
+  utter_cheer_up:
+  - text: "aqui pra te animar:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "como posso ajudar você?"
+  - text: "oq tu quer?"
+
+  utter_happy:
+  - text: "muito bom, continue!"
+  - text: "vai dá certo"
+
+  utter_goodbye:
+  - text: "xau"
+  - text: "flw"
+  - text: "vlw, flw"
+
+  utter_iamabot:
+  - text: "Sou um bot feito pela Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
